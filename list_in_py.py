@@ -23,6 +23,8 @@ items.clear()
 print (items)
     
     #error 
-lists = [1, "ragu" ,3]
+lists = [1, ["ragu","ragu1"] ,3]
 
-print (sum(lists))
+#print (sum(lists))
+
+print (lists[1][0])
