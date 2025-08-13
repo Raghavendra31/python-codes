@@ -21,13 +21,24 @@
 
 #atm code
 
-pin = "1234"
-attempts = 1
-while attempts <=3:
-    enter_pin = input("enter the pin ")
-    if enter_pin==pin:
-        print ("pin is correct")
-        break
-    else:
-        print ("incorrect pin")
-        attempts += 1
+# pin = "1234"
+# attempts = 1
+# while attempts <=3:
+#     enter_pin = input("enter the pin ")
+#     if enter_pin==pin:
+#         print ("pin is correct")
+#         break
+#     else:
+#         print ("incorrect pin")
+#         attempts += 1
+
+
+# a = 0
+# b=0
+# while a< 100000:
+#     b=0
+#     while b < 100000:
+#         b+= 1
+    
+#     a += 1
+#     print(f"a: {a}, b: {b}")
