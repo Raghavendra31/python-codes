@@ -66,5 +66,6 @@ d = {"bru": 1,
 
 for key, value in d.items():
     #sum of all values
+    print (value)
     total = sum(d.values())
 print (total)
