@@ -37,3 +37,41 @@
 #     print(f"factorial of {a} is {fact}")
 
 # ragu()
+
+# n = int (input ())
+# if n%2 != 0:
+#     print("Weird")
+# elif n%2 == 0 and n == range(2,6):
+#     print("Not Weird")
+# elif n%2 == 0 and n == range(6,21):
+#     print ("Weird")    
+# elif n%2 == 0 and n == 10000000000000000000:
+#     print("Not Weird")    
+
+
+# n = int (input())
+# m = []
+# for ragu in range(0,n+1):
+#     m[ragu] = ragu**2
+#     print (m)
+
+# n = int ( input ())
+# for r in range(1,n+1):
+#     print(str(r), end="")
+
+
+
+
+# n = int(input())
+# arr = map(int, input().split())
+    
+# sorted_arr = sorted(arr,reverse=True)
+# for i in range(n+1):
+#     if sorted_arr[i] != sorted_arr[i+1]:
+#         print(sorted_arr[i+1])
+#         break
+#     else:
+#         continue
+
+
+
