@@ -27,3 +27,16 @@
 
 
 
+class ragu:
+    def __init__(self,name):
+        self.name = name
+    def dog(self):
+        print(f"hello{self.name}")
+
+
+a = ragu("ragu")
+print (a)
+a.dog()
+
+
+print (a)
