@@ -35,7 +35,7 @@ class ragu:
 
 
 a = ragu("ragu")
-print (a)
+
 a.dog()
 
 

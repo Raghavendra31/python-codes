@@ -74,4 +74,48 @@
 #         continue
 
 
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
 
+
+while True:
+    print("this is calculator")
+    print ("enter 1 to do addition")
+    print("enter 2 to do sub")
+    print("enter 3 to do mul")
+    c = int ( input())
+
+    if (c == 1):
+        a = int(input("enter first number: "))
+        b = int(input("enter second number: "))
+        print(f"addition is {add(a,b)}")
+        print()
+        print()
+        print("---------")
+        print()
+        print()
+    elif (c == 2):
+        a = int(input("enter first number: "))
+        b = int(input("enter second number: "))
+        print(f"addition is {sub(a,b)}")
+        print()
+        print()
+        print("---------")
+        print()
+        print()
+    elif (c == 3):
+        a = int(input("enter first number: "))
+        b = int(input("enter second number: "))
+        print(f"addition is {mul(a,b)}")
+        print()
+        print()
+        print("---------")
+        print()
+        print()
+
+    else :
+        print("invalid input")
