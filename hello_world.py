@@ -1,1 +1,2 @@
-print("hello world")
+def ragu():
+    print("This is ragu function")
