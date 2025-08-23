@@ -1,35 +1,36 @@
-class Linkedlist:
-    def __init__(self,head = None,tail = None):
-        self.head = head
-        self.tail = None
+class Node:
+    def __init__(self, data):
+        self.data = data   # store data
+        self.next = None   # initially no next node
+class LinkedList:
+    def __init__(self):
+        self.head = None   # start with an empty list
 
-class LL_node:
-    def __init__(self,head = None,tail = None):
-        self.head = None
-
-
-    def print_node(self):
-        if self.head is None:
-            print("head is empty")
-        else:
-            n = self.head
-            while self is not None:
-                print (n.data)
-                n = n.ref
-
-    def add(self,data):
-        new_node = LL_node()
+    # Insert at the end
+    def append(self, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
-        else:
-            n = self.head
-            while n.tail is None:
-                n = n.tail
-            n.tail = new_node
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new_node
 
+    # Print the list
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
+# Create linked list
+ll = LinkedList()
 
-ragu = LL_node()
-ragu.add(1)
-ragu.add(2)
+# Add elements
+ll.append(10)
+ll.append(20)
+ll.append(30)
 
-
+# Display list
+ll.display()
