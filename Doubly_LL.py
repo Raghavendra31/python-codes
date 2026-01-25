@@ -27,3 +27,4 @@ class doubly_linked_list:
 ragu = doubly_linked_list()
 ragu.insert_empty(10)
 ragu.insert_empty(20)
+print(ragu.print_dLL(None))

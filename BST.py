@@ -6,14 +6,19 @@ class BST:
 
 
     def insert(self, value):
+        print(self.root)
         if value < self.root:
             if self.left is None:
                 self.left = BST(value)
+                print(self.root)
+                print(self.left)
             else:
                 self.left.insert(value)
         elif value > self.root:
             if self.right is None:
                 self.right = BST(value)
+                print(self.root)
+                print(self.right)
             else:
                 self.right.insert(value)    
 mroot = BST(10)
