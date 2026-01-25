@@ -24,7 +24,20 @@ class doubly_linked_list:
                 print(new_node.data, "--->", end= " ")
             else:
                 return
+        def insert_node(self,data):
+             n = self.head
+             while n.nref is not None:
+                 n = n.nref
+             new_node = node(data)
+             n.nref = new_node
+             new_node.pref = n
+             print(f"{new_node.data}", end=" ---> ")
+                  
+
 ragu = doubly_linked_list()
 ragu.insert_empty(10)
-ragu.insert_empty(20)
-print(ragu.print_dLL(None))
+ragu.insert_node(22)
+ragu.insert_node(24)
+ragu.insert_node(25)
+ragu.insert_node(26)
+
