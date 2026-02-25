@@ -23,13 +23,13 @@
 # print(f"Total sum of the list is: {total}")
 
 
-# a = {"Name": "Raghavendra",
-#      "Age": 30,
-#      "City": "Bangalore",
-#      "Occupation": "Software Engineer"}
+a = {"Name": "Raghavendra",
+     "Age": 30,
+     "City": "Bangalore",
+     "Occupation": "Software Engineer"}
 
-# for key, value in a.items():
-#     print(f"{key}: {value}")
+for key, value in a.items():
+    print(f"{key}: {value}")
 
 # a = ["raghavendra", "kumar", "reddy"]
 # marks = [90, 80, 70]
@@ -72,6 +72,6 @@
 #     dda[item] = len(item)
 # print(dda)
 
-a= input("Enter a list of numbers separated by spaces: ").split()
+# a= input("Enter a list of numbers separated by spaces: ").split()
 
-print (a)
+# print (a)

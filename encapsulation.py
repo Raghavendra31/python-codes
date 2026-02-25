@@ -20,12 +20,37 @@
 
 # r = db()
 # r.write("name", "John Doe")
+# print(r.read("name"))
 
 
-def swap_case(s):
-    return s.swapcase()
 
-if __name__ == '__main__':
-    s = input()
-    result = swap_case(s)
-    print(result)
+
+# def swap_case(s):
+#     return s.swapcase()
+
+# if __name__ == '__main__':
+#     s = input()
+#     result = swap_case(s)
+#     print(result)
+
+
+class db:
+    def __init__(self):
+        self.__store = {}
+    
+
+    def write(self, key , value):
+        self.__store[key] = value
+    
+    def read (self,key):
+        if key in self.__store:
+            return self.__store[key]
+        else:
+            print("key not found")
+
+
+ragu = db()
+
+ragu.write("hello","world")
+
+print(ragu.read("hello"))
