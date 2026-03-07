@@ -29,3 +29,74 @@ class Solution:
                 l2 = l2.next
 
         return dummy.next
+    
+class Node:
+    def __init__(self, data):
+        self.data = data   # store data
+        self.next = None   # initially no next node
+class LinkedList:
+    def __init__(self):
+        self.head = None   # start with an empty list
+
+    # Insert at the end
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new_node
+
+    # Print the list
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
+# Create linked list
+ll = LinkedList()
+
+# Add elements
+ll.append(1)
+ll.append(2)
+ll.append(3)
+
+
+class LinkedList1:
+    def __init__(self):
+        self.head = None   # start with an empty list
+
+    # Insert at the end
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new_node
+
+    # Print the list
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
+# Create linked list
+
+l2 = LinkedList1()
+
+l2.append(4)
+l2.append(5)
+l2.append(6)
+
+r = Solution()
+
+
+
+r.addTwoNumbers(ll,l2)
