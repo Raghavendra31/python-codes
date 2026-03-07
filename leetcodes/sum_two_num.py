@@ -31,8 +31,8 @@ class Solution:
         return dummy.next
     
 class Node:
-    def __init__(self, data):
-        self.data = data   # store data
+    def __init__(self, val):
+        self.val = val   # store data
         self.next = None   # initially no next node
 class LinkedList:
     def __init__(self):
