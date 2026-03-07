@@ -7,7 +7,7 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
-        dummy = ListNode()      # dummy node to start result list
+        dummy = ListNode()      
         current = dummy
         carry = 0
 
