@@ -11,7 +11,7 @@ class Solution(object): # Added (object) for Python 2 compatibility
         carry = 0
         
         while l1 or l2 or carry:
-            # Use getattr or a simple if/else for safety
+            # Use getattr or a simple if/else for safetyy
             v1 = l1.val if l1 else 0
             v2 = l2.val if l2 else 0
             
