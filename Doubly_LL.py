@@ -33,7 +33,7 @@ class doubly_linked_list:
              new_node.pref = n
              print(f"{new_node.data}", end=" ---> ")
                   
-#objects
+
 ragu = doubly_linked_list()
 ragu.insert_empty(10)
 ragu.insert_node(22)
