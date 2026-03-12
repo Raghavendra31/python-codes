@@ -20,7 +20,8 @@ class BST:
                 print(self.root)
                 print(self.right)
             else:
-                self.right.insert(value)    
+                self.right.insert(value)  
+#objects
 mroot = BST(10)
 for i in [5, 15, 2, 5, 13, 22, 1, 14]:
     mroot.insert(i) 
