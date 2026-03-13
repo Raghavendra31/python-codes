@@ -70,4 +70,4 @@ for key, value in d.items():
     total = sum(d.values())
 print (total)
 
-#dictionaries are the collection of key and value
+#dictionaries are the collection of key and values
