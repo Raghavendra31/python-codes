@@ -4,7 +4,7 @@
 # file.close()
 
 
-
+for i in range(0,1):
 with open("student.txt", "w+") as file:
         print("invalid input")
         print()
