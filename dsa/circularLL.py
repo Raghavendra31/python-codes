@@ -15,4 +15,11 @@ class cLL:
         newnode = Node(data)
         if self.head is None:
             self.head = newnode
-            
+
+        temp = self.head
+
+        while temp.nref:
+            temp = temp.nref
+
+        temp.nref = self.head 
+        
