@@ -75,3 +75,7 @@ for key, value in a.items():
 # a= input("Enter a list of numbers separated by spaces: ").split()
 
 # print (a)
+
+
+for i in range(0,23);
+     print(i)
